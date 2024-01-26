@@ -1,16 +1,69 @@
-# machine_learning_project-supervised-learning
+# Diabetes Prediction Project
 
-## Project Outcomes
-- Supervised Learning: use supervised learning techniques to build a machine learning model that can predict whether a patient has diabetes or not, based on certain diagnostic measurements.The project involves three main parts: exploratory data analysis, preprocessing and feature engineering, and training a machine learning model. 
-### Duration:
-Approximately 3 hours and 20 minutes.
-### Project Description:
-In this projects, you will apply supervised learning techniques to a real-world data set and use data visualization tools to communicate the insights gained from the analysis.
+## Project Overview
 
-The data set for this project is the "Diabetes" dataset from the National Institute of Diabetes and Digestive and Kidney Diseases 
-The project will involve the following tasks:
+This project is dedicated to predicting diabetes using supervised machine learning models. 
+We use a dataset containing medical predictor variables and one target variable, Outcome, which includes features like number of pregnancies, BMI, insulin level, and age.
 
--	Exploratory data analysis and pre-processing: We will import and clean the data sets, analyze and visualize the relationships between the different variables, handle missing values and outliers, and perform feature engineering as needed.
--	Supervised learning: We will use the Diabetes dataset to build a machine learning model that can predict whether a patient has diabetes or not, using appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC-AUC. We will select at least two models, including one ensemble model, and compare their performance.
+## Libraries Used
 
-The ultimate goal of the project is to gain insights from the data sets and communicate these insights to stakeholders using appropriate visualizations and metrics to make informed decisions based on the business questions asked."
+- **Pandas**: For data manipulation and analysis.
+- **NumPy**: For numerical operations.
+- **Seaborn & Matplotlib**: For data visualization.
+- **Scipy**: For scientific computing.
+- **Scikit-Learn**: For machine learning and predictive data analysis.
+
+## Data Loading and Preprocessing
+
+- **Source**: The dataset is loaded from a CSV file.
+- **Inspection**: Basic data inspection for missing values and data types.
+- **Details**: The dataset contains 768 entries and 9 columns with no missing values.
+
+## Exploratory Data Analysis
+
+- Box plots for visualizing data distribution.
+- Z-score calculations for standardization.
+- Identification and imputation of zero values in specific variables.
+- Correlation analysis with heatmap visualization.
+- Distribution analysis using histograms.
+- Normality testing with Shapiro-Wilk test.
+- Outcome-based group comparisons.
+
+## Feature Engineering
+
+- Imputation for variables like Glucose, Blood Pressure, Skin Thickness, Insulin, and BMI.
+- Detailed correlation analysis to understand feature-target relationships.
+
+## Data Visualization
+
+- Utilization of box plots, histograms, scatter plots, and pair plots for comprehensive data visualization.
+
+## Model Preparation
+
+- Data scaling using `StandardScaler`.
+- Splitting data into training and testing sets.
+
+## Model Training and Evaluation
+
+- **Models Used**: Logistic Regression and Random Forest Classifier.
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1 Score, and ROC AUC Score.
+
+## Hyperparameter Tuning
+
+- Conducting Grid Search for optimal parameters in Logistic Regression and Random Forest models.
+
+## Cross-Validation
+
+- Evaluating model performance using cross-validation techniques.
+
+## Feature Importance Analysis
+
+- Analyzing the importance of different features in the Random Forest model.
+
+## Conclusion
+
+- Final recommendations based on model performance considering various evaluation metrics.
+
+## Repository Contents
+
+- Detailed code, data, and findings are available in the Jupyter Notebook files within this repository.
